@@ -1,0 +1,30 @@
+{
+  "name": "gulp-bower-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha Tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcguan2008/gulp-bower-task"
+  },
+  "keywords": [
+    "gulp",
+    "bower",
+    "task"
+  ],
+  "author": "Ben",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bcguan2008/gulp-bower-task/issues"
+  },
+  "homepage": "https://github.com/bcguan2008/gulp-bower-task",
+  "dependencies": {
+    "bower": "^1.5.2",
+    "gulp": "^3.9.0",
+    "should": "^7.1.0",
+    "through2": "^2.0.0"
+  }
+}
