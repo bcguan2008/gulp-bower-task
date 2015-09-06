@@ -10,24 +10,19 @@ module.exports = function (options) {
 
 	// returning the file stream
 	return through.obj(function(file, enc, cb) {
-
 		if (file.isBuffer()) {
+			var $this = this;
 
-			/*var buffer = new Buffer('');
-
-			for(var i = 0, length = packlst.length ; i< length ; i++ ){
-				buffer = Buffer.concat([buffer ,packlst[i].buffer]);
-			}
-
-			file.contents = Buffer.concat([buffer, file.contents]);
-			this.push(file);*/
 			var bowerFile = gbowerTask(file,options);
-			this.push(bowerFile);
+			if(bowerFile){
+				bowerFile.forEach(function(val,index){
+					$this.push(val);
+				});
+			}
 		}
-
-
 
 		return cb();
 	});
 };
+
 
