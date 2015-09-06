@@ -2,6 +2,8 @@ var bower = require('bower');
 var gutil= require('gulp-util');
 
 var bowerTask  = function(file,options){
+	console.log(file.path);
+	
 	var fileContents =  file.contents.toString();
 	var bowerJSON = JSON.parse(fileContents);
 	console.log(bowerJSON);
