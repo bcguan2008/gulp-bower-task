@@ -1,14 +1,14 @@
 {
   "name": "gulp-bower-task",
   "version": "1.0.0",
-  "description": "",
+  "description": "gulp bower 插件，方便自动执行bower，并文件copy 到指定目录。",
   "main": "index.js",
   "scripts": {
     "test": "mocha Tests"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bcguan2008/gulp-bower-task"
+    "url": "git+https://github.com/bcguan2008/gulp-bower-task.git"
   },
   "keywords": [
     "gulp",
@@ -28,5 +28,6 @@
     "gulp-util": "^3.0.6",
     "should": "^7.1.0",
     "through2": "^2.0.0"
-  }
+  },
+  "devDependencies": {}
 }
