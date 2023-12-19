@@ -23,8 +23,8 @@
   "homepage": "https://github.com/bcguan2008/gulp-bower-task",
   "dependencies": {
     "bower": "^1.5.2",
-    "glob": "^5.0.14",
-    "gulp": "^3.9.0",
+    "glob": "^9.0.0",
+    "gulp": "^4.0.0",
     "gulp-util": "^3.0.6",
     "should": "^7.1.0",
     "through2": "^2.0.0"
